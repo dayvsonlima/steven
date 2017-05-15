@@ -1,0 +1,25 @@
+name: mvc_app_kemal
+version: 0.1.0
+
+authors:
+  - Dayvson Lima <dayvsonlima31@gmail.com>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+
+  active_record:
+    github: waterlink/active_record.cr
+    branch: master
+
+  postgres_adapter:
+    github: waterlink/postgres_adapter.cr
+
+targets:
+  mvc_app_kemal:
+    main: src/mvc_app_kemal.cr
+
+crystal: 0.22.0
+
+license: MIT

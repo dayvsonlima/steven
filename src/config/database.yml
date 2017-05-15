@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgres
+  encoding: utf8
+  pool: 5
+  username: root
+  host: localhost
+
+development:
+  <<: *default
+  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
+  database: mod_development
+
+test:
+  <<: *default
+  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
+  database: mod_test
+
+production:
+  <<: *default
+  database: mod_production
+  host: <%= ENV['MOD_DATABASE_HOST'] %>
+  username: <%= ENV['MOD_DATABASE_USER'] %>
+  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
+  pool: <%= ENV['MOD_DATABASE_POOL'] %>
