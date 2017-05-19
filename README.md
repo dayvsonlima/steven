@@ -2,6 +2,9 @@
 
 The MVC Crystal Framework for Rubyists
 
+**Work in progress**
+
+
 ## Installation
 
 TODO
@@ -12,6 +15,7 @@ TODO
 
 ## Development
 
+TODO
 
 ## Generators Rails style
 
