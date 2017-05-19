@@ -1,22 +1,57 @@
-# mvc_app_kemal
+# Steven Framework
 
-TODO: Write a description here
+The MVC Crystal Framework for Rubyists
 
 ## Installation
 
-TODO: Write installation instructions here
+TODO
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO
 
 ## Development
 
-TODO: Write development instructions here
+
+## Generators Rails style
+
+### Generate model
+```shell
+steven generator model foo bar:integer
+```
+
+```crystal
+class Foot < ActiveRecord::Base
+end
+```
+
+### Generate controller
+```shell
+steven generate controller hello index 
+```
+
+```crystal
+class HelloController < Steven::Controller
+  include Core::Views
+
+  get "/" do
+    view("hello/index")
+  end
+end
+```
+
+### Generate migrations
+```shell
+steven g migration add_description_to_products description:string 
+```
+
+```crystal
+TODO
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/mvc_app_kemal/fork )
+1. Fork it ( https://github.com/dayvsonlima/steven-framework/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -24,4 +59,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Dayvson Lima - creator, maintainer
+- [dayvsonlima](https://github.com/dayvsonlima) Dayvson Lima - creator, maintainer
