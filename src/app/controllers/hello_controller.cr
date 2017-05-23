@@ -1,12 +1,9 @@
-class HelloController
-  include Core::Views
-
-  get "/" do
-    pp Example.all
+class HelloController < Steven::Controller
+  get "/hello" do
     view("hello/index")
   end
 
-  get "/test" do
-    "holla dayvson"
+  get "/hello/:id" do
+    view("hello/test")
   end
 end
