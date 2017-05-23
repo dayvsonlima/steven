@@ -1,7 +1,6 @@
 require "./spec_helper"
 
-describe MvcAppKemal do
-  # TODO: Write tests
+describe App do
 
   it "works" do
     false.should eq(true)
