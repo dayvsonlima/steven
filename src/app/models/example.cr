@@ -1,7 +1,2 @@
-class Example < ActiveRecord::Model
-  adapter postgres
-
-  primary id                 : Int
-  field last_name            : String
-  field first_name           : String
+class Example < Steven::Model
 end
