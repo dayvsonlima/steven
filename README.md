@@ -31,14 +31,12 @@ end
 
 ### Generate controller
 ```shell
-steven generate controller hello index 
+steven generate controller hello index
 ```
 
 ```crystal
 class HelloController < Steven::Controller
-  include Core::Views
-
-  get "/" do
+  get "/hello" do
     view("hello/index")
   end
 end
@@ -46,7 +44,7 @@ end
 
 ### Generate migrations
 ```shell
-steven g migration add_description_to_products description:string 
+steven g migration add_description_to_products description:string
 ```
 
 ```crystal
