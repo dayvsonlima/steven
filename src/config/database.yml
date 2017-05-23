@@ -7,18 +7,18 @@ default: &default
 
 development:
   <<: *default
-  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
-  database: mod_development
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: development
 
 test:
   <<: *default
-  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
-  database: mod_test
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: test
 
 production:
   <<: *default
-  database: mod_production
-  host: <%= ENV['MOD_DATABASE_HOST'] %>
-  username: <%= ENV['MOD_DATABASE_USER'] %>
-  password: <%= ENV['MOD_DATABASE_PASSWORD'] %>
-  pool: <%= ENV['MOD_DATABASE_POOL'] %>
+  database: production
+  host: <%= ENV['DATABASE_HOST'] %>
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  pool: <%= ENV['DATABASE_POOL'] %>

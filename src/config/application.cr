@@ -1,20 +1,15 @@
 require "kemal"
-require "active_record"
-require "postgres_adapter"
+require "jennifer/adapter/postgres"
+require "jennifer"
 
-require "../core/**"
+require "../steven/**"
 require "../app/**"
 
-ENV["PG_USER"] = "dayvson"
+ENV["PG_USER"] = "my_user"
 ENV["PG_PASS"] = ""
 ENV["PG_HOST"] = "localhost"
-ENV["PG_DATABASE"] = "kemal_db"
+ENV["PG_DATABASE"] = "my_db"
 
 module App
-  ActiveRecord::Registry.register_adapter(
-    "postgres",
-    PostgresAdapter::Adapter
-  )
-
   Kemal.run
 end
