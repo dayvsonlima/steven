@@ -8,17 +8,16 @@ dependencies:
   kemal:
     github: kemalcr/kemal
     branch: master
-
-  active_record:
-    github: waterlink/active_record.cr
-    branch: master
-
-  postgres_adapter:
-    github: waterlink/postgres_adapter.cr
+    
+  pg:
+    github: will/crystal-pg
+    
+  jennifer:
+    github: imdrasil/jennifer.cr
 
 targets:
   mvc_app_kemal:
-    main: src/mvc_app_kemal.cr
+    main: src/app.cr
 
 crystal: 0.22.0
 
