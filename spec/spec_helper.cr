@@ -3,4 +3,3 @@ require "../src/steven/**"
 require "../src/app/models/**"
 
 include Spec2::GlobalDSL
-# Spec2.doc
