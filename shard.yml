@@ -5,13 +5,17 @@ authors:
   - Dayvson Lima <dayvsonlima31@gmail.com>
 
 dependencies:
+  spec2:
+    github: waterlink/spec2.cr
+    version: ~> 0.9
+
   kemal:
     github: kemalcr/kemal
     branch: master
-    
+
   pg:
     github: will/crystal-pg
-    
+
   jennifer:
     github: imdrasil/jennifer.cr
 
